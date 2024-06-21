@@ -19,6 +19,7 @@ ul{
 button{
     padding: 0;
     border: none;
+    background-color: transparent;
 }
 
 .container{
@@ -49,6 +50,14 @@ padding: 30px 0;
     margin-bottom: 35px;
 }
 
+.menu__close-btn{
+    position: absolute;
+     top: 20px;
+     right: 20px;
+}
+.menu__item{
+    margin-bottom: 30px;
+}
 .menu__btn{
     display: none;
     width: 40px;
@@ -68,6 +77,7 @@ align-items: center;
 gap: 0 65px;
 font-size: 18px;
 font-weight: 400;
+margin-left: 85px ;
 }
 
 .user-actions{
@@ -81,7 +91,7 @@ font-weight: 400;
 .top{
     background-image: url(../images/Group\ 91.jpg);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom left;
     background-size: cover;
 }
 .top__inner{
@@ -145,7 +155,16 @@ font-weight: normal;
 
 @media (max-width: 860px) {
 .menu__list{
-    display: none;
+    position: absolute;
+    width: 360px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+display: block;
+text-align: center;
+padding-top: 60px;
 }
 .menu__btn{
     display: flex;
@@ -157,6 +176,10 @@ font-weight: normal;
 .logo{
     margin-left: auto;
     margin-right: auto;
+}
+.header__inner{
+    padding-left: 64px;
+    padding-right: 64px;
 }
 }
 
@@ -174,9 +197,28 @@ margin-right: 154px;
 }
 }
 
-@media (max-width: 650px) {
-
-}
+@media (max-width: 654px) {
+    .container{
+padding-left: 10px;
+padding-right: 10px;
+    }
+    .header__inner{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .top__title{
+        font-size: 40px;
+    }
+    .blockquote__text{
+        font-size: 20px;
+        max-width: 376px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .top__text{
+        font-size: 20px;
+    }    
+    }
 
 
 
@@ -184,8 +226,43 @@ margin-right: 154px;
 
 
 @media (max-width: 490px) {
+ .logo{
+        margin-right: 80px;
+}
+.logo img{
+    width: 40px;
 
 }
-@media (max-width: 360px) {
+}
 
+
+
+
+
+@media (max-width: 360px) {
+.logo{
+    margin-right: 50px;
+}
+.user-actions__item-search{
+    margin-left: 0;
+}
+.header__inner{
+    padding: 10px 0;
+}
+.top__title{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.top__text{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.top__inner{
+    min-height: 367px;
+}
+.blockquote__text{
+    max-width: 340px; 
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
 }
